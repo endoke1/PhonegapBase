@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820DE5D5154D771600459695 /* jquery.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 820DE5D4154D771600459695 /* jquery.min.js */; };
+		820DE5D9154D788700459695 /* jquery.mobile-1.1.0.css in Resources */ = {isa = PBXBuildFile; fileRef = 820DE5D7154D788700459695 /* jquery.mobile-1.1.0.css */; };
+		820DE5DA154D788700459695 /* jquery.mobile-1.1.0.js in Sources */ = {isa = PBXBuildFile; fileRef = 820DE5D8154D788700459695 /* jquery.mobile-1.1.0.js */; };
 		826497A9154D724A00FE5510 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826497A8154D724A00FE5510 /* Foundation.framework */; };
 		826497AB154D724A00FE5510 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826497AA154D724A00FE5510 /* UIKit.framework */; };
 		826497AD154D724A00FE5510 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826497AC154D724A00FE5510 /* CoreGraphics.framework */; };
@@ -42,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		820DE5D4154D771600459695 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		820DE5D7154D788700459695 /* jquery.mobile-1.1.0.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery.mobile-1.1.0.css"; sourceTree = "<group>"; };
+		820DE5D8154D788700459695 /* jquery.mobile-1.1.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.mobile-1.1.0.js"; sourceTree = "<group>"; };
 		826497A4154D724A00FE5510 /* PhonegapBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonegapBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		826497A8154D724A00FE5510 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		826497AA154D724A00FE5510 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -79,7 +85,7 @@
 		826497F5154D724A00FE5510 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		826497F8154D724A00FE5510 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		826497F9154D724A00FE5510 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
-		82649800154D72B100FE5510 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		82649800154D72B100FE5510 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = PhonegapBase/www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +120,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		820DE5D6154D786800459695 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				820DE5D7154D788700459695 /* jquery.mobile-1.1.0.css */,
+				820DE5D8154D788700459695 /* jquery.mobile-1.1.0.js */,
+				820DE5D4154D771600459695 /* jquery.min.js */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		82649796154D724A00FE5510 = {
 			isa = PBXGroup;
 			children = (
+				820DE5D6154D786800459695 /* Lib */,
+				82649800154D72B100FE5510 /* www */,
 				826497C2154D724A00FE5510 /* PhonegapBase */,
 				826497A7154D724A00FE5510 /* Frameworks */,
 				826497A5154D724A00FE5510 /* Products */,
@@ -154,7 +172,6 @@
 		826497C2154D724A00FE5510 /* PhonegapBase */ = {
 			isa = PBXGroup;
 			children = (
-				82649800154D72B100FE5510 /* www */,
 				826497CB154D724A00FE5510 /* Cordova.framework */,
 				826497CD154D724A00FE5510 /* Resources */,
 				826497EE154D724A00FE5510 /* Classes */,
@@ -333,6 +350,7 @@
 				826497F6154D724A00FE5510 /* MainViewController.xib in Resources */,
 				826497FA154D724A00FE5510 /* verify.sh in Resources */,
 				82649801154D72B100FE5510 /* www in Resources */,
+				820DE5D9154D788700459695 /* jquery.mobile-1.1.0.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +380,8 @@
 				826497C9154D724A00FE5510 /* main.m in Sources */,
 				826497F1154D724A00FE5510 /* AppDelegate.m in Sources */,
 				826497F4154D724A00FE5510 /* MainViewController.m in Sources */,
+				820DE5D5154D771600459695 /* jquery.min.js in Sources */,
+				820DE5DA154D788700459695 /* jquery.mobile-1.1.0.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +570,7 @@
 				826497FF154D724A00FE5510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

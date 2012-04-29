@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title></title>
-  
+    <title></title>  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-	<meta charset="utf-8">
-
 
 	<!-- iPad/iPhone specific css below, add after your main css >
 	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
 	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
 	-->
 	<!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+
+    <!-- jQuery Mobile Start -->    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <!-- iQuery Mobile end -->
+        
 	<script type="text/javascript" charset="utf-8" src="cordova-1.7.0rc1.js"></script>
+        
     <script type="text/javascript">
 
 
@@ -47,18 +53,28 @@
 	function onDeviceReady()
 	{
 		// do your thing!
-		navigator.notification.alert("Cordova is working")
+//		navigator.notification.alert("Cordova is working")
 	}
     
     </script>
+        
   </head>
   <body onload="onBodyLoad()">
-	<h1>Hey, it's Cordova!</h1>
-	<p>Don't know how to get started? Check out our <em><a target="_blank" href="http://docs.phonegap.com/en/edge/guide_getting-started_ios_index.md.html#Getting%20Started%20with%20iOS">Getting Started Guide</a></em>
-	<br />
-	<ol>
-		<li>Check your console log for any white-list rejection errors.</li>
-		<li>Add your allowed <strong>hosts</strong> in Cordova.plist/ExternalHosts (wildcards OK, don't enter the URL scheme)</li>
-	</ol>
+      
+      <div data-role="page">
+          
+          <div data-role="header">
+              <h1>Page Title</h1>
+          </div><!-- /header -->
+          
+          <div data-role="content">	
+              <p>Page content goes here.</p>		
+          </div><!-- /content -->
+          
+          <div data-role="footer">
+              <h4>Page Footer</h4>
+          </div><!-- /header -->
+      </div><!-- /page -->
+
   </body>
 </html>
